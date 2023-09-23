@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>冷墨仿QQUI</title>
+ 
+ <style>
+ *{
+  margin:0;
+  padding:0;   
+   }
+ .logo{
+  width:60.6vw; 
+   display: block;
+   margin: 0 auto;
+   margin-top: 10vw;
+   background:#ffffff;
+   }
+ .user
+ {
+   width:80.4vw;
+   height:17.2vw;
+   background:rgb(242,243,247);
+   border-radius:30vw;
+   margin:0 auto;
+   margin-top:7.5vw;
+   font-size: 4vw;
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   }
+ .pass
+ {
+   
+   width:80.4vw;
+   height:17.2vw;
+   background:rgb(242,243,247);
+   
+   border-radius:30vw;
+   margin:0 auto;
+   margin-top:3vw;
+   font-size: 4vw;
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   }
+  input{
+   border: none;
+   background:#ffffff;
+   font-size:4vw;
+   text-align:center;
+   }
+ 
+ .lm{
+   font-size:3vw;
+   text-align:center;
+   margin-top: 5vw;
+   }
+ input{
+   border: none;
+   background:rgb(0,0,0,0);
+   font-size:4.5vw;
+   text-align:center;
+   margin-left:-5vw;
+   }
+ .ty{
+   display: inline-block;
+   width:4vw;
+   height:4vw;
+ 
+   transform: translateY(1vw);
+   margin-right:0.5vw;
+   }
+ .dl{
+   width:25vw;
+   height:25vw;
+   margin: 0 auto;
+   display: block;
+   margin-top: 15vw;
+   border-radius:100vw;
+   border: none;
+   background:rgb(232,235,242);
+   font-weight: bold;
+   font-size:6.5vw;
+   color:#ffffff;
+   }
+ #tx{
+   width:10vw;
+   border-radius:100p;   
+  
+   }
+ #mm{
+   
+   width:25vw;
+   margin: 0 auto;
+   display: block;
+   }
+
+#forgetpwd,#zc,#split,#hhhh,#x{
+  text-align:center;
+  float:left;
+  padding-left:1.2em;
+  font-size:3vw;
+  font-weight: bold;
+margin-left:5vw;
+   
+   margin-top:40vw;
+  
+   display: block;
+   }
+
+
+ 
+
+
+ </style>
+ 
+  </head>
+  <body>
+      <img class="logo" src="logo.jpg">	
+<div class="user"><img id="tx"src=""><input type="text" id="inputText"placeholder="QQ号/QID/邮箱/手机号"></div>
+<div class="pass"><input type="password" id="lm" placeholder="请输入密码"></div>
+<p class="lm"><input type="checkbox" class="ty" ></span><span>已阅读并同意</span><span style="color:blue">服务协议</span><span>和QQ</span><span style="color:blue">隐私保护指引</span></p>
+<button class="dl" onclick="window.open('sjh.html')" ><img id="mm" src="">→</button>
+  <span id="forgetpwd" onclick="window.open('sjh.html')">手机号登陆</span>   <span id="split">｜</span>    <span id="zc" onclick="window.open('sjh.html')" >新用户注册</span>  <span id="x">｜</span><span id="hhhh" onclick="window.open('sjh.html')">更多选项</span>
+    <script type="text/javascript"> 
+
+        document.getElementById('inputText').onkeyup=function(){  
+
+            var qqNum = document.getElementById('inputText').value; 
+
+            document.getElementById('tx').src = 'https://q2.qlogo.cn/headimg_dl?dst_uin=' + qqNum + '&spec=640'; 
+
+        } 
+      document.getElementById('lm').onkeyup=function(){  
+
+            
+            document.getElementById('mm').src = "dlan.gif"; 
+}
+
+    </script> 
+  
+  </body>
+</html>
